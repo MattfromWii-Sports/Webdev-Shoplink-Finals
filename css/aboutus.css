@@ -1,0 +1,181 @@
+.aboutus-main h2 {
+  font-size: 3rem;
+}
+
+.who-we-are-container {
+  width: 100%;
+  height: 24rem;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.who-we-are-container img {
+  filter: brightness(0.2);
+  width: 100%;
+  min-height: 40rem;
+  object-fit: cover;
+  overflow: hidden;
+}
+.who-we-are-container .description {
+  color: #344e41;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+}
+.who-we-are-container p {
+  font-size: 1.5rem;
+  max-width: 80%;
+}
+.who-we-are-container .green-highlight {
+  color: #588157;
+  font-weight: bold;
+}
+
+.motto-container {
+  /* background-color: #324c37; */
+  background-image: url("../images/aboutus/Banner-Background.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: top center;
+  height: 32rem;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.motto-background {
+  height: 100%;
+  filter: brightness(0.6);
+  transition: transform 0.2s ease-in;
+}
+.motto-container h2 {
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  z-index: 2;
+  font-size: 4rem;
+  transition: transform 0.2s ease-in;
+}
+.motto-background:hover,
+.motto-background:hover + h2 {
+  transform: scale(1.1);
+}
+
+.team-container {
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: white; /* #dad7cd */
+  padding: 4rem 6rem 6rem;
+}
+.team-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 4rem;
+}
+.role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid #51826c;
+  padding: 1rem;
+  border-radius: 2rem;
+  min-height: 20rem;
+  text-align: center;
+  transition: transform 0.4s ease-in-out;
+}
+.role:hover {
+  transform: scale(1.06);
+}
+.role > img {
+  width: 8rem;
+  margin-bottom: 10px;
+}
+.role-title {
+  color: #344e41;
+  font-weight: bold;
+}
+.role-description {
+  color: grey;
+  line-height: 1.1;
+}
+
+@media (max-width: 800px) {
+  .aboutus-main h2 {
+    font-size: 2.5rem;
+  }
+
+  .who-we-are-container p {
+    font-size: 1.2rem;
+  }
+
+  .motto-container {
+    height: auto;
+  }
+  .motto-background {
+    min-width: clamp(45rem, 45rem, 95%);
+  }
+  .motto-container h2 {
+    font-size: 3rem;
+  }
+
+  .team-container {
+    padding: 3rem 4rem 4rem;
+  }
+  .team-grid {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .aboutus-main h2 {
+    font-size: 1.8rem;
+  }
+
+  .who-we-are-container {
+    height: 20rem;
+  }
+  .who-we-are-container p {
+    font-size: 0.8rem;
+  }
+
+  .motto-background {
+    min-width: 35rem;
+  }
+  .motto-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .team-container {
+    padding: 2.5rem 1rem 3rem;
+  }
+  .team-grid {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .role {
+    min-height: 18rem;
+  }
+  .role > img {
+    width: 6rem;
+  }
+}

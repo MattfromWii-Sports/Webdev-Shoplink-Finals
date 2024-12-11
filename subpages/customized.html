@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Shoplink</title>
+  <link rel="icon" type="image/png" href="../images/logos/shoplink-icon-white-transparent.png">
+  <script src="" defer></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style-hero.css">
+  <link rel="stylesheet" href="../css/header_footer.css" />
+  <link rel="stylesheet" href="../css/customized.css" />
+  <link rel="stylesheet" href="../css/form-validation.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div class="header">
+    <div class="tagLineGrid">Delivering Quality, Securing Trust<sup>TM</sup></div>
+    <div class="searchGrid">
+      <form action="../subpages/on-hand-products.html" method="get" class="search-bar">
+        <input type="text" placeholder="Search..." name="query" />
+        <button type="submit"><img src="../images/search.png" alt="search-icon" /></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navBar">
+    <ul class="sidebar">
+      <li id="close" onclick="closeSidebar()"><a href="#" class="closeButton"><svg xmlns="http://www.w3.org/2000/svg"
+            height="40px" viewBox="0 -960 960 960" width="50px" fill="#5f6368">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg></a></li>
+      <li><a href="/">HOME</a></li>
+      <li><a href="../subpages/on-hand-products.html" id="productSide">PRODUCTS</a></li>
+      <li><a href="../subpages/contacts.html">CONTACTS</a></li>
+      <li><a href="../subpages/aboutus.html">ABOUT US</a></li>
+    </ul>
+
+    <ul class="navList">
+      <li id="logo"><a href="/" class="logo" id="navListLogo"><img src="../images/logo-transparent.png"
+            class="shoplink-logo" id="logo-white"><img src="../images/logo-green-transparent.png" class="shoplink-logo"
+            id="logo-green"></a></li>
+      <li class="hideOnMobile"><a href="/" class="home" id="navListHome">HOME</a></li>
+      <li class="hideOnMobile" id="productNav-container"><a href="../subpages/on-hand-products.html" class="bold-underline">PRODUCTS</a></li>
+      <li class="hideOnMobile"><a href="../subpages/contacts.html">CONTACTS</a></li>
+      <li class="hideOnMobile"><a href="../subpages/aboutus.html">ABOUT US</a></li>
+      <li onclick=showSidebar() class="menu"><a href="#" id="menuButton"><svg xmlns="http://www.w3.org/2000/svg"
+            height="40px" viewBox="0 -960 960 960" width="50px" fill="#5f6368">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg></span></a></li>
+    </ul>
+  </nav>
+
+
+  <!-- HERO -->
+  <div class="hero-container">
+
+    <div class="hero" id="productHero">
+      <img src="../images/hero/Brown Pizza Box 02.jpg" class="img-hero pop">
+      <div class="text-overlay text-wipe">
+        <div class="text-wipe"></div>
+        <div class="hero-text">
+          <h2 style="font-weight: 600;">PRODUCTS</h2>
+          <h3 class="bottom-text-hero"><span class="root">PRODUCTS</span>&nbsp | &nbsp<span
+              class="typeOfProduct">CUSTOMIZED</span></h3>
+          <h5 class="description">Can’t find the right place that provides customizable packaging boxes?<br>Shoplink is
+            the one for you! We offer the option to fully personalize your product <br>packaging.</h5>
+        </div>
+
+        <img src="../images/hero/customized-model.png" class="overlay-img">
+      </div>
+    </div>
+  </div>
+
+<!-- CONTENTS -->
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true" data-bs-backdrop="false">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        Modal content goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CUSTOMIZED BOX -->
+<section class="content">
+<div class="customized-box">
+
+      <div class="container-fluid text-center" id="cuztomized-container">
+        <div class="row">
+          <div class="col-5 column">
+            <div class="custom-title">
+              <h2>Customized Box</h2>
+            </div>
+
+            <section class="slide-container">
+              <div class="slide-wrapper">
+                <div class="slider">
+                  <img id="slide-1" src="../images/customized-slide/Quote01.jpg" alt="">
+                  <img id="slide-2" src="../images/customized-slide/Quote02.jpg" alt="">
+                  <img id="slide-3" src="../images/customized-slide/Quote03.jpg" alt="">
+                  <img id="slide-4" src="../images/customized-slide/Quote04.jpg" alt="">
+                  <img id="slide-5" src="../images/customized-slide/Quote05.jpg" alt="">
+                  <img id="slide-6" src="../images/customized-slide/Quote06.jpg" alt="">
+                  <img id="slide-7" src="../images/customized-slide/Quote07.jpg" alt="">
+                  <img id="slide-8" src="../images/customized-slide/Quote08.jpg" alt="">
+                </div>
+
+                <div class="slide-nav">
+                  <a href="#slide-1"></a>
+                  <a href="#slide-2"></a>
+                  <a href="#slide-3"></a>
+                  <a href="#slide-4"></a>
+                  <a href="#slide-5"></a>
+                  <a href="#slide-6"></a>
+                  <a href="#slide-7"></a>
+                  <a href="#slide-8"></a>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="col column">
+
+            <!-- STEP 1 -->
+            <div class="container-fluid" id="step">
+              <div class="row row-cols-2" id="first-row">
+                <div class="col-3 image-container">
+                  <img src="../images/icons/first-icon.png" alt="Step 1" class="icon-step">
+                </div>
+
+                <div class="col" id="step-text">
+                  <h3 class="step-text">STEP 1:<br><span>VISUALIZE YOUR BOX</span></h3>
+                </div>
+              </div>
+
+              <div class="row row-cols-2" id="second-row">
+                <div class="col-12">
+                  <p class="subtext">Visualize your custom box and let us create it with <br>our excellence.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="container-fluid" id="step-2">
+              <div class="row row-cols-2" id="first-row-2">
+
+                <div class="col" id="step-text-2">
+                  <h3 class="step-text">STEP 2:<br><span>REQUEST QUOTATION</span></h3>
+                </div>
+
+                <div class="col-3 image-container">
+                  <img src="../images/icons/second-icon.png" alt="Step 2" class="icon-step">
+                </div>
+              </div>
+              <div class="row row-cols-2" id="second-row-2">
+                <div class="col-12">
+                  <p class="subtext" id="subtext-2">Put in the details while choosing from our <br>available sizes and
+                    options and submit for <br>quotation</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="container-fluid" id="step-3">
+              <div class="row row-cols-2" id="first-row">
+                <div class="col-3 image-container">
+                  <img src="../images/icons/third-icon.png" alt="Step 3" class="icon-step">
+                </div>
+                <div class="col" id="step-text">
+                  <h3 class="step-text">STEP 3:<br><span>EXPECT RESPONSE</span></h3>
+                </div>
+              </div>
+
+              <div class="row row-cols-2" id="second-row">
+                <div class="col-12">
+                  <p class="subtext">Wait for response from our dedicated <br>Support Specialist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<!-- BOX DETAILS -->
+<form id="quotationForm">
+ <div class="box-details">
+  <div class="container-fluid text-center" id="cuztomized-container">
+    <div class="row">
+      <div class="col-5" id="upload-column">
+        <div class="custom-title">
+        <h2>Box Details<h2>
+        </div>
+
+              <div class="drag">
+                <label for="input-file" id="drop-area">
+                  <input type="file" accept="image/*" id="input-file" hidden>
+                  <div id="img-view">
+                    <img src="../images/icons/upload.png" alt="Upload Icon">
+                    <p>Click or drag image to this area to upload.</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="col-6" id="form-column">
+              <div class="container px-4 text-center">
+                <div class="box-form">
+
+                  <select name="box-printing" class="highlight box-info" id="box-printing" required>
+                    <option value="" disabled selected id="test">Box Printing</option>
+                    <option value="a">Standard Print - 2 to 3 Colors</option>
+                    <option value="b">Without Print</option>
+                  </select>
+
+                  <select name="size-unit" id="size-unit" class="highlight box-info" required>
+                    <option value="" disabled selected>Size Unit</option>
+                    <option value="a">Inches</option>
+                    <option value="b">Milimeter</option>
+                  </select>
+
+        <div class="form-group">
+          <div class="number-input">
+            <input type="number" class="highlight" id="quantity" name="quantity" min="0" value="" placeholder="Quantity" required>
+            <div class="buttons">
+              <button type="button" onclick="increment('quantity')">+</button>
+              <button type="button" onclick="decrement('quantity')">−</button>
+            </div>
+          </div>
+        </div>
+
+                  <div class="form-group">
+                    <div class="number-input">
+                      <input type="number" class="highlight" id="length" name="length" min="0" value=""
+                        placeholder="Box Length" required>
+                      <div class="buttons">
+                        <button type="button" onclick="increment('length')">+</button>
+                        <button type="button" onclick="decrement('length')">−</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="number-input">
+                      <input type="number" class="highlight" id="width" name="width" min="0" value=""
+                        placeholder="Box Width" required>
+                      <div class="buttons">
+                        <button type="button" onclick="increment('width')">+</button>
+                        <button type="button" onclick="decrement('width')">−</button>
+                      </div>
+                    </div>
+                  </div>
+
+        <div class="form-group">
+          <div class="number-input">
+            <input type="number" class="highlight" id="height" name="height" min="0" value="" placeholder="Box Height" required>
+            <div class="buttons">
+              <button type="button" onclick="increment('height')">+</button>
+              <button type="button" onclick="decrement('height')">−</button>
+            </div>
+          </div>
+        </div>
+
+                  <textarea id="comments" name="comments" placeholder="Additional Notes"
+                    class="highlight box-info"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="client-details">
+        <div class="custom-title">
+          <h2 id="client-title">Client Details<h2>
+        </div>
+
+        <div class="client-form">
+
+
+      <div class="grid-container">
+        <div class="item-1">
+          
+          <input type="name" class="client-input highlight" name="fname" id="fname" placeholder="First Name" required>
+
+            </div>
+
+        <div class="item-2">
+          <input type="name" class="client-input highlight" name="lname" id="lname" placeholder="Last Name" required>
+        </div>
+
+            <div class="item-3">
+              <input type="tel" class="client-input highlight" name="contactNum" id="contactNum"
+                placeholder="Phone Number" required>
+            </div>
+
+            <div class="item-4">
+              <input type="email" class="client-input highlight" name="email" id="email" placeholder="Email Address"
+                required>
+            </div>
+          </div>
+
+          <div class="submit-btn">
+            <button type="submit" class="rqst-quotation-btn"> REQUEST QUOTATION </button>
+          </div>
+    </form>
+    </div>
+  </section>
+
+  <!-- FOOTER  -->
+  <div class="footer">
+    <div class="footer-top">
+      <div class="footer-top-msg">
+        <p><b>WHERE TO BUY</b></p>
+      </div>
+      <div class="footer-top-buttons">
+        <div class="footer-top-images">
+          <a href="https://maps.app.goo.gl/ndaYxZzZknJSnrge9"><img src="../images/footer/footerTop-Store-Button.png"
+              alt="Store Button"></a>
+          <img id="lazada-button" src="../images/footer/footerTop-Lazada-Button.png" alt="Lazada Button">
+          <a href="https://shopee.ph/shop/1216673787/"><img src="../images/footer/footerTop-Shopee-Button.png"
+              alt="Shopee Button"></a>
+          <a href="https://www.tiktok.com/@shoplinkpackaging"><img src="../images/footer/footerTop-Button-TikTok.png"
+              alt="TikTok Button"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <a href="../index.html"><img src="../images/footer-logo-white-transparent.png"></a>
+      </div>
+      <div class="footer-socials">
+        <div class="footer-contact">
+          <p>Follow Us!</p>
+          <div class="footer-logo-row">
+            <a href="https://www.facebook.com/muting.kaalaman.3"><img src="../images/footer/footerBottom-Facebook.png"
+                alt="facebook logo"></a>
+            <a href="https://www.tiktok.com/@shoplinkpackaging"><img src="../images/footer/footerBottom-TikTok.png"
+                alt="tiktok logo"></a>
+          </div>
+        </div>
+        <div class="footer-follow">
+          <p>Contact Us!</p>
+          <div class="footer-logo-row">
+            <a href="contacts.html"><img src="../images/footer/footerBottom-Email.png" alt="email logo"></a>
+            <a href="contacts.html"><img src="../images/footer/footerBottom-Phone.png" alt="phone logo"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-terms">
+        <button class="terms" onclick="openTerms()">Terms of Use</button>
+        <button class="privacy-policy" onclick="openPrivacy()">Privacy Policy</button>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2024 Shoplink. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer modals -->
+  <div class="modal fade" id="terms-modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Terms and Conditions</h3>
+          <button type="button" class="close" onclick="closeTerms()">X</button>
+        </div>
+        <div class="modal-body">
+          <p>By continuing to access this website, you agree to accept these terms and conditions in full.</p>
+          <h4>License</h4>
+          <p>Unless otherwise stated, Shoplink and/or its licensors own the intellectual property rights for all
+            material on Shoplink. All intellectual property rights are reserved. You must not republish, reproduce,
+            duplicate, or copy material from Shoplink.</p>
+          <h4>Products</h4>
+          <p>Product images displayed on the website may have slight variations with the actual product. Prices are
+            subject to change.</p>
+          <h4>Orders and Shipping</h4>
+          <p>We reserve the right to cancel orders. Shipping costs and times may vary, and returns are processed on a
+            case to case basis with with regards to an investigation by our internal staff.</p>
+          <h4>Liability</h4>
+          <p>We are not liable for indirect or consequential damages.</p>
+          <p>We may update these Terms without notice.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn confirm-btn" onclick="closeTerms()">CONFIRM</button>
+          <button type="button" class="btn cancel-btn" onclick="closeTerms()">CANCEL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="privacy-modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Privacy Policy</h3>
+          <button type="button" class="close" onclick="closePrivacy()">X</button>
+        </div>
+        <div class="modal-body">
+          <p>This privacy policy outlines how we collect, use, and protect your personal information.</p>
+          <h4>Information We Collect</h4>
+          <p>We may collect personal information such as your name, email address, shipping address, billing address,
+            and payment information when you contact us or create an account for our website.</p>
+          <h4>How We Use Your Information</h4>
+          <p>We use your personal information to process and fulfill your orders, communicate with you about your
+            orders, and send you promotional offers and updates.</p>
+          <h4>Third-Party Links</h4>
+          <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices or
+            content of these websites.</p>
+          <h4>Changes to our Privacy Policys</h4>
+          <p>We may update our privacy policy anytime. We will notify you of any changes by posting the updated privacy
+            policy on our website.</p>
+          <p>By using Shoplink, you consent to our privacy policy.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn confirm-btn" onclick="closePrivacy()">CONFIRM</button>
+          <button type="button" class="btn cancel-btn" onclick="closePrivacy()">CANCEL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="../js/hero-script.js"></script>
+  <script src="../js/footer.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/upload-image.js"></script>
+  <!-- <script src="../js/form-validation.js"></script> -->
+  <script src="../js/customized-form-validation.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

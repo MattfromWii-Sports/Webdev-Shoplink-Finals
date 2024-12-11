@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Shoplink</title>
+  <link rel="icon" type="image/png" href="../images/logos/shoplink-icon-white-transparent.png">
+  <script src="" defer></script>
+
+  <!-- FONTS & ELEMENTS-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/header_footer.css">
+  <link rel="stylesheet" href="css/style-hero.css">
+  <link rel="stylesheet" href="css/style-slider.css">
+
+
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div class="header">
+    <div class="tagLineGrid">Delivering Quality, Securing Trust<sup>TM</sup></div>
+    <div class="searchGrid">
+      <form action="../subpages/on-hand-products.html" method="get" class="search-bar">
+        <input type="text" placeholder="Search..." name="query" />
+        <button type="submit"><img src="../images/search.png" alt="search-icon" /></button>
+      </form>
+    </div>
+  </div>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <ul class="sidebar">
+      <li id="close" onclick="closeSidebar()"><a href="#" class="closeButton"><svg xmlns="http://www.w3.org/2000/svg"
+            height="40px" viewBox="0 -960 960 960" width="50px" fill="#5f6368">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg></a></li>
+      <li><a href="./index.html">HOME</a></li>
+      <li><a href="./subpages/on-hand-products.html">PRODUCTS</a></li>
+      <li><a href="./subpages/contacts.html">CONTACTS</a></li>
+      <li><a href="./subpages/aboutus.html">ABOUT US</a></li>
+    </ul>
+
+    <nav class="navbar">
+      <ul class="navList">
+        <!-- Logo -->
+        <li id="logo" class="logo-container">
+          <a href="/" class="logo" id="navListLogo">
+            <img src="images/logo-transparent.png" class="shoplink-logo" id="logo-white" alt="Logo White">
+            <img src="images/logo-green-transparent.png" class="shoplink-logo" id="logo-green" alt="Logo Green">
+          </a>
+        </li>
+        <!-- Navigation Links -->
+        <li class="hideOnMobile"><a href="./index.html" id="navListHome">HOME</a></li>
+        <li class="hideOnMobile"><a href="./subpages/on-hand-products.html">PRODUCTS</a></li>
+        <li class="hideOnMobile"><a href="./subpages/contacts.html">CONTACTS</a></li>
+        <li class="hideOnMobile"><a href="./subpages/aboutus.html">ABOUT US</a></li>
+        <!-- Hamburger Menu -->
+        <li onclick="showSidebar()" class="menu">
+          <a href="#" id="menuButton">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="50px" fill="#5f6368">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </nav>
+
+
+  <!-- HERO -->
+
+  <div class="hero-container">
+
+    <div class="hero">
+      <img src="images/hero/RSC 02.jpg" class="img-hero pop">
+      <div class="text-overlay text-wipe">
+        <div class="hero-text">
+
+          <h5 class="top-text-hero">ELEVATE YOUR BRAND WITH</h5>
+          <h2 style="font-weight: 600;"><span class="green-highlight">CUSTOM PACKAGING </span><br>SOLUTIONS</h2>
+          <h3 class="bottom-text-hero">We offer the option to fully personalize your product packaging.</h3>
+          <button class="hero-button-products"
+            onclick="location.href='subpages/on-hand-products.html'">PRODUCTS</button>
+
+        </div>
+
+        <img src="images/hero/image-removebg-preview (5) (1).png" class="overlay-img">
+      </div>
+    </div>
+
+    <div class="hero">
+      <img src="images/hero/Pizza Tripod 03.jpg" class="img-hero pop">
+      <div class="text-overlay text-overlay-swap text-wipe">
+        <div class="text-wipe"></div>
+        <div class="hero-text hero-text-right">
+          <h5 class="top-text-hero">YOUR PARTNER IN<br></h5>
+          <h2 style="font-weight: 600;">PACKAGING <span class="green-highlight">EXCELLENCE</span></h2>
+          <h3 class="bottom-text-hero">Experience the difference with designs that make an impact.</h3>
+          <button class="hero-button-products"
+            onclick="location.href='subpages/on-hand-products.html'">PRODUCTS</button>
+        </div>
+        <img src="images/hero/20802133163.png" class="overlay-img overlay-img-next-photo" style="margin-left: -15rem;">
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Main -->
+  <section class="main">
+    <div class="test-show">
+      <div class="first-text-new" style="margin-top: -20rem;">
+        <h2 class="text-shadow">
+          EXPLORE OUR WIDE VARIETY OF<br>
+          <span class="green-highlight">PACKAGING SOLUTIONS</span>
+        </h2>
+        <h5>Whether you have a team of 2 or 200, our shared team <br>inboxes keep everyone on the same page and in the
+          loop.</h5>
+        <div class="row" style="height: 5rem; justify-content: center;">
+
+          <div class="col-3 text-bullets">CORRUGATED BOXES</div>
+
+
+          <div class="col-3 text-bullets">PACKAGING ITEMS</div>
+
+
+          <div class="col-3 text-bullets">PIZZA ESSENTIALS</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: -3rem;">
+      <div class="col-1 text-white p-3"></div>
+      <div class="col-5 slider-container">
+
+
+        <div class="row">
+        </div>
+        <div class="slider">
+          <div class="item">
+            <a href="https://shopee.ph/Corrugated-RSC-Shipping-Box-Packaging-Brown-Kraft-No-print-JNT-Box-JRS-Box-i.1216673787.25530500507"
+              target="_blank" rel="noopener noreferrer">
+              <img src="images/Products/Cochinillo Box.png" alt="Cochinillo Box">
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://shopee.ph/Mailer-Box-Tbox-Corrugated-Packaging-Gift-Box-Brown-Kraft-No-print-T0-25pcs-i.1216673787.24224868773"
+              target="_blank" rel="noopener noreferrer">
+              <img src="images/Products/Mailer Box.png" alt="Mailer Box">
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://shopee.ph/Pizza-Box-Corrugated-Plain-No-print-8-inches-50pcs-i.1216673787.29963416251"
+              target="_blank" rel="noopener noreferrer">
+              <img src="images/Products/Pizza Box - Brown Plain.png" alt="Brown Plain Pizza Box">
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://shopee.ph/Pizza-Box-Corrugated-Packaging-Brown-Kraft-Generic-Print-Green-Shoplink-12-Inches-25pcs-i.1216673787.28304638780?sp_atk=ab84f355-a8e2-4423-8ea7-30cbf65d954b"
+              target="_blank" rel="noopener noreferrer">
+              <img src="images/Products/Pizza Box - Green Cheesy Goodness.png" alt="Green Cheesy Goodness Pizza Box">
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://shopee.ph/Pizza-Box-Corrugated-Packaging-Brown-Kraft-Generic-Print-Red-Shoplink-10-Inches-25pcs-i.1216673787.26055568135?sp_atk=382634f7-c7c9-4f63-bd1f-935f99747a35"
+              target="_blank" rel="noopener noreferrer">
+              <img src="images/Products/Pizza Box - Red Cheesy Goodness.png" alt="Red Cheesy Goodness Pizza Box">
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://shopee.ph/Pizza-Box-Corrugated-Plain-No-print-8-inches-50pcs-i.1216673787.29963416251?sp_atk=9e325cc3-1842-4c34-9db7-8bba75152271"
+              target="_blank" rel="noopener noreferrer">
+              <img src="images/Products/Pizza Box - White Plain.png" alt="White Cheesy Goodness Pizza Box">
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://shopee.ph/Pizza-Box-Corrugated-Packaging-Brown-Kraft-Generic-Print-Yellow-Shoplink-12-Inches-50pcs-i.1216673787.26056809340?sp_atk=33528d9b-48ef-4dab-9428-70befdf2b130"
+              target="_blank" rel="noopener noreferrer">
+              <img src="images/Products/Pizza Box - Yellow Cheesy Goodness.png" alt="Yellow Cheesy Goodness Pizza Box">
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://shopee.ph/Pizza-Tripod-Pizza-Savers-Pizza-Supplies-Food-Grade-(100-pcs)-Kitchen-Pasta-Utensils-i.1216673787.29559606784?sp_atk=de4608ae-9e21-4d8d-89e2-b155fadebe61"
+              target="_blank" rel="noopener noreferrer">
+              <img src="images/Products/Pizza Tripod.png" alt="Pizza Tripod">
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://shopee.ph/Corrugated-RSC-Shipping-Box-Packaging-Brown-Kraft-No-print-JNT-Box-JRS-Box-i.1216673787.25530500507?sp_atk=2c076758-d502-4515-b804-15d0440b12fc"
+              target="_blank" rel="noopener noreferrer">
+              <img src="images/Products/RSC - Shipping Box.png" alt="RSC Shipping Box">
+            </a>
+          </div>
+          <button id="next">></button>
+          <button id="prev"><</button>
+            
+
+        </div>
+
+
+
+      </div>
+
+
+      <div class="col-5 first-text" style="margin-left: 5rem;">
+
+        <h2 class="text-shadow">
+          EXPLORE OUR WIDE VARIETY OF
+          <span class="green-highlight">PACKAGING SOLUTIONS</span>
+        </h2>
+        <h5>Whether you have a team of 2 or 200, our shared team <br>inboxes keep everyone on the same page and in the
+          loop.</h5>
+        <div class="row" style="height: 5rem;">
+          <div class="col-1 circle">
+            <div class="checkmark"></div>
+          </div>
+          <div class="col-3 text-bullets"> CORRUGATED <br>BOXES</div>
+
+          <div class="col-1 circle">
+            <div class="checkmark"></div>
+          </div>
+          <div class="col-3 text-bullets">PACKAGING <br>ITEMS</div>
+
+          <div class="col-1 circle">
+            <div class="checkmark"></div>
+          </div>
+          <div class="col-3 text-bullets">PIZZA <br>ESSENTIALS</div>
+        </div>
+      </div>
+      <div class="col-1 text-white p-3"></div>
+    </div>
+
+    <div class="responsiveness-custom-box">
+      <h2 class="text-shadow" style="margin-right: 1rem; margin-left: 1rem;">CUSTOMIZE YOUR BOX</h2>
+
+    </div>
+
+
+
+
+    <div class="row" style="height: 40rem; background-color: rgba(218, 215, 205, 0.33);">
+      <div class="col-1 spacer"></div>
+
+      <div class="col-6 steps-steps-container">
+        <div class="row steps-container">
+
+          <div class="col-12 bg-success steps">
+            <img src="images/hero/RSC 03.jpg">
+            <div class="text-overlay shadow-text">
+              <h2><span style="color: #344e41;">STEP 1: </span>VISUALIZE YOUR BOX</h2>
+            </div>
+            <div class="text-overlay-steps">
+              <div class="steps-title-container">
+                <h2>STEP 1: VISUALIZE YOUR BOX</h2>
+              </div>
+              <h5 style="margin-top: 3.75rem;">Visualize your custom box and let us create it with <br>our excellence.
+              </h5>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="col-12 bg-primary steps">
+            <img src="images/hero/White Pizza Box 02.jpg">
+            <div class="text-overlay shadow-text">
+              <h2><span style="color: #344e41;">STEP 2: </span>REQUEST QUOTATION</h2>
+            </div>
+            <div class="text-overlay-steps">
+              <div class="steps-title-container">
+                <h2>STEP 2: REQUEST QUOTATION</h2>
+              </div>
+              <h5 style="margin-top: 3.75rem;">Put in the details while choosing from our available sizes and options
+                and
+                submit for quotation.</h5>
+            </div>
+          </div>
+
+          <div class="col-12 bg-danger steps">
+            <img src="images/hero/IMG_4958.JPG">
+            <div class="text-overlay shadow-text">
+              <h2><span style="color: #344e41;">STEP 3: </span>EXPECT RESPONSE</h2>
+            </div>
+            <div class="text-overlay-steps">
+              <div class="steps-title-container">
+                <h2>STEP 3: EXPECT RESPONSE</h2>
+              </div>
+              <h5 style="margin-top: 3.75rem;">Wait for response from our dedicated Support Specialist.</h5>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-4 custom-box">
+
+        <h2 class="text-shadow">CUSTOMIZE YOUR BOX</h2>
+        <div class="image-promotion">
+          <img src="images/hero/Mailer_Box_03-removebg-preview.png">
+        </div>
+        <a href="../subpages/customized.html"><button class="hero-button-products request-quotation"
+            style="margin-top: -2rem;">REQUEST QUOTATION</button></a>
+
+      </div>
+
+      <div class="col-1"></div>
+    </div>
+
+
+    <div class="responsiveness-custom-box">
+      <a href="../subpages/customized.html">
+        <button class="hero-button-products request-quotation" style="margin-top: -2rem;">REQUEST QUOTATION</button>
+      </a>
+    </div>
+
+
+
+
+
+
+
+    <!-- insquiries -->
+    <div class="row" style="height: 40rem; margin: 2rem;">
+      <div class="col-12 contacts-container">
+        <h2>Any other Inquiries? Please don’t hesitate to contact us.</h2>
+        <h5>The key value at Shoplink is efficiency and effectiveness. We are always open to talk about your business.
+        </h5>
+        <button class="contact-us hero-button-products" onclick="window.location.href='subpages/contacts.html'">
+          <h2>CONTACT US</h2>
+        </button>
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+  <!-- FOOTER  -->
+  <div class="footer">
+    <div class="footer-top">
+      <div class="footer-top-msg">
+        <p><b>WHERE TO BUY</b></p>
+      </div>
+      <div class="footer-top-buttons">
+        <div class="footer-top-images">
+          <a href="https://maps.app.goo.gl/ndaYxZzZknJSnrge9"><img src="./images/footer/footerTop-Store-Button.png"
+              alt="Store Button"></a>
+          <img id="lazada-button" src="../images/footer/footerTop-Lazada-Button.png" alt="Lazada Button">
+          <a href="https://shopee.ph/shop/1216673787/"><img src="./images/footer/footerTop-Shopee-Button.png"
+              alt="Shopee Button"></a>
+          <a href="https://www.tiktok.com/@shoplinkpackaging"><img src="./images/footer/footerTop-Button-TikTok.png"
+              alt="TikTok Button"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <a href="./index.html"><img src="./images/footer-logo-white-transparent.png"></a>
+      </div>
+      <div class="footer-socials">
+        <div class="footer-contact">
+          <p>Follow Us!</p>
+          <div class="footer-logo-row">
+            <a href="https://www.facebook.com/muting.kaalaman.3"><img src="./images/footer/footerBottom-Facebook.png"
+                alt="facebook logo"></a>
+            <a href="https://www.tiktok.com/@shoplinkpackaging"><img src="./images/footer/footerBottom-TikTok.png"
+                alt="tiktok logo"></a>
+          </div>
+        </div>
+        <div class="footer-follow">
+          <p>Contact Us!</p>
+          <div class="footer-logo-row">
+            <a href="./subpages/contacts.html"><img src="./images/footer/footerBottom-Email.png" alt="email logo"></a>
+            <a href="./subpages/contacts.html"><img src="./images/footer/footerBottom-Phone.png" alt="phone logo"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-terms">
+        <button class="terms" onclick="openTerms()">Terms of Use</button>
+        <button class="privacy-policy" onclick="openPrivacy()">Privacy Policy</button>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2024 Shoplink. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer modals -->
+  <div class="modal fade" id="terms-modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Terms and Conditions</h3>
+          <button type="button" class="close" onclick="closeTerms()">X</button>
+        </div>
+        <div class="modal-body">
+          <p>By continuing to access this website, you agree to accept these terms and conditions in full.</p>
+          <h4>License</h4>
+          <p>Unless otherwise stated, Shoplink and/or its licensors own the intellectual property rights for all
+            material on Shoplink. All intellectual property rights are reserved. You must not republish, reproduce,
+            duplicate, or copy material from Shoplink.</p>
+          <h4>Products</h4>
+          <p>Product images displayed on the website may have slight variations with the actual product. Prices are
+            subject to change.</p>
+          <h4>Orders and Shipping</h4>
+          <p>We reserve the right to cancel orders. Shipping costs and times may vary, and returns are processed on a
+            case to case basis with with regards to an investigation by our internal staff.</p>
+          <h4>Liability</h4>
+          <p>We are not liable for indirect or consequential damages.</p>
+          <p>We may update these Terms without notice.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn confirm-btn" onclick="closeTerms()">CONFIRM</button>
+          <button type="button" class="btn cancel-btn" onclick="closeTerms()">CANCEL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="privacy-modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Privacy Policy</h3>
+          <button type="button" class="close" onclick="closePrivacy()">X</button>
+        </div>
+        <div class="modal-body">
+          <p>This privacy policy outlines how we collect, use, and protect your personal information.</p>
+          <h4>Information We Collect</h4>
+          <p>We may collect personal information such as your name, email address, shipping address, billing address,
+            and payment information when you contact us or create an account for our website.</p>
+          <h4>How We Use Your Information</h4>
+          <p>We use your personal information to process and fulfill your orders, communicate with you about your
+            orders, and send you promotional offers and updates.</p>
+          <h4>Third-Party Links</h4>
+          <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices or
+            content of these websites.</p>
+          <h4>Changes to our Privacy Policys</h4>
+          <p>We may update our privacy policy anytime. We will notify you of any changes by posting the updated privacy
+            policy on our website.</p>
+          <p>By using Shoplink, you consent to our privacy policy.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn confirm-btn" onclick="closePrivacy()">CONFIRM</button>
+          <button type="button" class="btn cancel-btn" onclick="closePrivacy()">CANCEL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- SCRIPTS -->
+  <script src="js/hero-script.js"></script>
+  <script src="js/image-slider.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/search.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Shoplink </title>
+  <link rel="icon" type="image/png" href="../images/logos/shoplink-icon-white-transparent.png">
+  <script src="" defer></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style-hero.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="tagLineGrid">Delivering Quality, Securing Trust<sup>TM</sup></div>
+    <div class="searchGrid">
+      <form action="../subpages/on-hand-products.html" method="get" class="search-bar">
+        <input type="text" placeholder="Search..." name="query" />
+        <button type="submit"><img src="../images/search.png" alt="search-icon" /></button>
+    </form> 
+    </div>
+  </div>
+  
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navBar">
+    <ul class="sidebar">
+      <li id="close" onclick="closeSidebar()"><a href="#" class="closeButton"><svg xmlns="http://www.w3.org/2000/svg"
+            height="40px" viewBox="0 -960 960 960" width="50px" fill="#5f6368">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg></a></li>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="./on-hand-products.html" id="productSide">PRODUCTS</a></li>
+      <li><a href="./contacts.html">CONTACTS</a></li>
+      <li><a href="./aboutus.html">ABOUT US</a></li>
+    </ul>
+
+    <ul class="navList">
+      <li id="logo"><a href="/" class="logo" id="navListLogo"><img src="../images/logo-transparent.png"
+            class="shoplink-logo" id="logo-white"><img src="../images/logo-green-transparent.png" class="shoplink-logo"
+            id="logo-green"></a></li>
+      <li class="hideOnMobile"><a href="../index.html" class="home" id="navListHome">HOME</a></li>
+      <li class="hideOnMobile" id="productNav-container"><a href="./on-hand-products.html" class="bold-underline">PRODUCTS</a></li>
+      <li class="hideOnMobile"><a href="./contacts.html">CONTACTS</a></li>
+      <li class="hideOnMobile"><a href="./aboutus.html">ABOUT US</a></li>
+      <li onclick=showSidebar() class="menu"><a href="#" id="menuButton"><svg xmlns="http://www.w3.org/2000/svg"
+            height="40px" viewBox="0 -960 960 960" width="50px" fill="#5f6368">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg></span></a></li>
+    </ul>
+  </nav>
+
+
+  <!-- HERO -->
+  <div class="hero-container">
+
+    <div class="hero" id="productHero">
+      <img src="../images/hero/Mailer Box 01.jpg" class="img-hero pop">
+      <div class="text-overlay text-wipe">
+        <div class="text-wipe"></div>
+        <div class="hero-text">
+          <h2 style="font-weight: 600;">PRODUCTS</h2>
+          <h3 class="bottom-text-hero"><span class="root">PRODUCTS</span>&nbsp    |    &nbsp<span class="mid">ON-HAND</span>&nbsp    |    &nbsp<span class="typeOfProduct">ALL PRODUCTS</span></h3>
+          <button class="hero-button-products" onclick="location.href='../subpages/customized.html'">CUSTOMIZE</button>
+
+        </div>
+
+        <img src="../images/hero/product-model.png" class="overlay-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+<!-- CATEGORIES -->
+<div class="container px-4 text-center overflow-hidden filter-container" id="categories">
+  <div class="row gx-6">
+    <div class="col" data-category="all">
+      <div class="p-4">
+        <div class="image-container" data-filter="all">
+          <img src="../images/Products/all-products.jpg" alt="All Products" class="filter-image">
+          <div class="overlay">
+            <p class="image-text">All Products</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" data-category="boxes">
+      <div class="p-4">
+        <div class="image-container" data-filter="boxes">
+          <img src="../images/Products/Boxes.jpg" alt="Boxes" class="filter-image">
+          <div class="overlay">
+            <p class="image-text">Boxes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" data-category="packaging">
+      <div class="p-4">
+        <div class="image-container" data-filter="packaging">
+          <img src="../images/Products/Packaging.jpg" alt="Packaging" class="filter-image">
+          <div class="overlay">
+            <p class="image-text">Packaging</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- DIVIDER -->
+<div class="options">
+  <div class="filter-grid">
+  </div>
+
+  <div class="sort-grid">
+    <div class="select-container">
+      <select class="select-box" id="sort">
+        <option value="">Sort By</option>
+        <option value="relevance">Relevance</option>
+        <option value="priceLowHigh">Price: Low to High</option>
+        <option value="priceHighLow">Price: High to Low</option>
+        <option value="name">Brand: A-Z</option>
+        <option value="nameDesc">Brand: Z-A</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="products" id="producuts">
+<div class="product-container" id="products">
+
+  <div class="box" data-name="Red Cheesy Goodness Pizza Box" data-price="325" data-filter="boxes">
+    <a href="https://shopee.ph/Pizza-Box-Corrugated-Packaging-Brown-Kraft-Generic-Print-Red-Shoplink-10-Inches-25pcs-i.1216673787.26055568135?sp_atk=cf4640e7-1769-4a50-9727-efeaf6924493">
+
+    <img src="../images/Products/Red-Pizza.jpg" alt="Red Cheesy Goodness">
+    <div class="logo-container-overlay">
+      <img src="../images/logos/logo-noname.png" class="logo-overlay">
+    </div>
+    <div class="product-details">
+      <h4>Red Cheesy Goodness Pizza Box</h4>
+      <h5>₱325</h5>
+    </div>
+  </a>
+  </div>
+
+
+  <div class="box" data-name="Yellow Cheesy Goodness Pizza Box" data-price="325" data-filter="boxes">
+    <a href="https://shopee.ph/Pizza-Box-Corrugated-Packaging-Brown-Kraft-Generic-Print-Yellow-Shoplink-11-Inches-25pcs-i.1216673787.28901819451?sp_atk=147283c7-8907-44b6-b968-9482583adf86">
+
+    <img src="../images/Products/Yellow-Pizza.jpg" alt="Yellow Cheesy Goodness">
+    <div class="logo-container-overlay">
+      <img src="../images/logos/logo-noname.png" class="logo-overlay">
+    </div>
+    <div class="product-details">
+      <h4>Yellow Cheesy Goodness Pizza Box</h4>
+      <h5>₱325</h5>
+    </div>
+  </a>
+  </div>
+
+  <div class="box"  data-name="Green Cheesy Goodness Pizza Box" data-price="325" data-filter="boxes">
+    <a href="https://shopee.ph/Pizza-Box-Corrugated-Packaging-Brown-Kraft-Generic-Print-Green-Shoplink-11-Inches-25pcs-i.1216673787.26901814874?sp_atk=e13ba52a-b0c9-4bce-9833-e3faec5927fe">
+
+    <img src="../images/Products/Green-Pizza.jpg" alt="Green Cheesy Goodness">
+    <div class="logo-container-overlay">
+      <img src="../images/logos/logo-noname.png" class="logo-overlay">
+    </div>
+    <div class="product-details">
+      <h4>Green Cheesy Goodness Pizza Box</h4>
+      <h5>₱325</h5>
+    </div>
+  </a>
+
+  </div>
+
+  <div class="box" data-name="Cochinillo Box" data-price="750" data-filter="boxes">
+    <a href="https://shopee.ph/Corrugated-Cochinillo-Box-with-Handle-Die-cut-Box-Brown-Kraft-No-print-10pcs-i.1216673787.27404831725?sp_atk=18ec5021-d0c1-4759-8a41-2bae4b6cda16">
+    <img src="../images/Products/Cochinillo Box.jpg" alt="Cochinillo Box">
+    <div class="logo-container-overlay">
+      <img src="../images/logos/logo-noname.png" class="logo-overlay">
+    </div>
+    <div class="product-details">
+      <h4>Cochinillo Box</h4>
+      <h5>₱750</h5>
+    </div>
+  </a>
+
+  </div>
+
+  <div class="box" data-name="Mailer Box" data-price="200" data-filter="boxes">
+    <a href="https://shopee.ph/Mailer-Box-Tbox-Corrugated-Packaging-Gift-Box-Brown-Kraft-No-print-T2-25pcs-i.1216673787.24774869338?sp_atk=8ef6466f-74ff-4bb0-a932-c43dc84147f6">
+
+    <img src="../images/Products/Mailer Box.jpg" alt="Mailer Box">
+    <div class="logo-container-overlay">
+      <img src="../images/logos/logo-noname.png" class="logo-overlay">
+    </div>
+    <div class="product-details">
+      <h4>Mailer Box</h4>
+      <h5>₱200</h5>
+    </div>
+  </a>
+
+  </div>
+
+  <div class="box" data-name="Brown Plain Pizza Box" data-price="280" data-filter="boxes">
+    <a href="https://shopee.ph/Pizza-Box-Corrugated-Packaging-Brown-Kraft-No-print-Plain-Box-Shoplink-10-Inches-25pcs-i.1216673787.24974909360?sp_atk=749f5390-33ab-4aae-9200-cbfd7d6414ac">
+
+    <img src="../images/Products/Pizza Box - Brown Plain.jpg" alt="Brown Plain">
+    <div class="logo-container-overlay">
+      <img src="../images/logos/logo-noname.png" class="logo-overlay">
+    </div>
+    <div class="product-details">
+      <h4>Brown Plain Pizza Box</h4>
+      <h5>₱280</h5>
+    </div>
+  </a>
+
+  </div>
+
+  <div class="box" data-name="White Plain Pizza Box" data-price="280" data-filter="boxes">
+    <a href="https://shopee.ph/Pizza-Box-Corrugated-Packaging-Brown-Kraft-No-print-Plain-Box-Shoplink-10-Inches-25pcs-i.1216673787.24974909360?sp_atk=749f5390-33ab-4aae-9200-cbfd7d6414ac">
+
+    <img src="../images/Products/Pizza Box - White Plain.jpg" alt="White Plain">
+    <div class="logo-container-overlay">
+      <img src="../images/logos/logo-noname.png" class="logo-overlay">
+    </div>
+    <div class="product-details">
+      <h4>White Plain Pizza Box</h4>
+      <h5>₱280</h5>
+    </div>
+  </a>
+
+  </div>
+
+  <div class="box" data-name="Pizza Tripod" data-price="119" data-filter="packaging">
+    <a href="https://shopee.ph/Pizza-Tripod-Pizza-Savers-Pizza-Supplies-Food-Grade-(100-pcs)-Kitchen-Pasta-Utensils-i.1216673787.29559606784?sp_atk=15685028-9dd7-41f5-8a7b-906ab97a1b28">
+
+    <img src="../images/Products/Pizza Tripod.jpg" alt="Pizza Tripod">
+    <div class="logo-container-overlay">
+      <img src="../images/logos/logo-noname.png" class="logo-overlay">
+    </div>
+    <div class="product-details">
+      <h4>Pizza Tripod</h4>
+      <h5>₱119</h5>
+    </div>
+  </a>
+
+  </div>
+
+  <div class="box" data-name="Regular Slotted Container" data-price="330" data-filter="boxes">
+    <a href="https://shopee.ph/Corrugated-RSC-Shipping-Box-Packaging-Brown-Kraft-No-print-JNT-Box-JRS-Box-Medium-10pcs-i.1216673787.20687560426?sp_atk=8bf0213f-42bf-4772-bc6e-0d7b71fe75db">
+
+    <img src="../images/Products/RSC - Shipping Box.jpg" alt="Shipping Box">
+    <div class="logo-container-overlay">
+      <img src="../images/logos/logo-noname.png" class="logo-overlay">
+    </div>
+    <div class="product-details">
+      <h4>Regular Slotted Container</h4>
+      <h5>₱330</h5>
+    </div>
+  </a>
+
+  </div>
+
+  <div class="box" data-name="Packaging Tape" data-price="198" data-filter="packaging">
+    <a href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzg1NmVibmJ3ajBpcDVybGRyNnlmM2NpOHdocWE5M2U1bjZjOHl0YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wr7oA0rSjnWuiLJOY5/giphy.gif">
+
+    <img src="../images/Products/packagingtape.jpg" alt="Packaging Tape">
+    <div class="logo-container-overlay">
+      <img src="../images/logos/logo-noname.png" class="logo-overlay">
+    </div>
+    <div class="product-details">
+      <h4>Packaging Tape</h4>
+      <h5>₱198</h5>
+    </div>
+    </a>
+
+  </div>
+
+
+</div>
+</section>
+
+
+  <!-- FOOTER  -->
+    <div class="footer">
+      <div class="footer-top">
+        <div class="footer-top-msg">
+          <p><b>WHERE TO BUY</b></p>
+        </div>
+        <div class="footer-top-buttons">
+          <div class="footer-top-images">
+            <a href="https://maps.app.goo.gl/ndaYxZzZknJSnrge9"><img src="../images/footer/footerTop-Store-Button.png"
+                alt="Store Button"></a>
+            <img id="lazada-button" src="../images/footer/footerTop-Lazada-Button.png" alt="Lazada Button">
+            <a href="https://shopee.ph/shop/1216673787/"><img src="../images/footer/footerTop-Shopee-Button.png"
+                alt="Shopee Button"></a>
+            <a href="https://www.tiktok.com/@shoplinkpackaging"><img src="../images/footer/footerTop-Button-TikTok.png"
+                alt="TikTok Button"></a>
+          </div>
+        </div>
+      </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <a href="../index.html"><img src="../images/footer-logo-white-transparent.png"></a>
+      </div>
+      <div class="footer-socials">
+        <div class="footer-contact">
+          <p>Follow Us!</p>
+          <div class="footer-logo-row">
+            <a href="https://www.facebook.com/muting.kaalaman.3"><img src="../images/footer/footerBottom-Facebook.png" alt="facebook logo"></a>
+            <a href="https://www.tiktok.com/@shoplinkpackaging"><img src="../images/footer/footerBottom-TikTok.png" alt="tiktok logo"></a>
+          </div>
+        </div>
+        <div class="footer-follow">
+          <p>Contact Us!</p>
+          <div class="footer-logo-row">
+            <a href="contacts.html"><img src="../images/footer/footerBottom-Email.png" alt="email logo"></a> 
+            <a href="contacts.html"><img src="../images/footer/footerBottom-Phone.png" alt="phone logo"></a> 
+          </div>
+        </div>
+      </div>
+      <div class="footer-terms">
+        <button class="terms" onclick="openTerms()">Terms of Use</button>
+        <button class="privacy-policy" onclick="openPrivacy()">Privacy Policy</button>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2024 Shoplink. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer modals -->
+  <div class="modal fade" id="terms-modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Terms and Conditions</h3>
+          <button type="button" class="close" onclick="closeTerms()">X</button>
+        </div>
+        <div class="modal-body">
+          <p>By continuing to access this website, you agree to accept these terms and conditions in full.</p>
+          <h4>License</h4>
+          <p>Unless otherwise stated, Shoplink and/or its licensors own the intellectual property rights for all
+            material on Shoplink. All intellectual property rights are reserved. You must not republish, reproduce,
+            duplicate, or copy material from Shoplink.</p>
+          <h4>Products</h4>
+          <p>Product images displayed on the website may have slight variations with the actual product. Prices are
+            subject to change.</p>
+          <h4>Orders and Shipping</h4>
+          <p>We reserve the right to cancel orders. Shipping costs and times may vary, and returns are processed on a
+            case to case basis with with regards to an investigation by our internal staff.</p>
+          <h4>Liability</h4>
+          <p>We are not liable for indirect or consequential damages.</p>
+          <p>We may update these Terms without notice.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn confirm-btn" onclick="closeTerms()">CONFIRM</button>
+          <button type="button" class="btn cancel-btn" onclick="closeTerms()">CANCEL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="privacy-modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Privacy Policy</h3>
+          <button type="button" class="close" onclick="closePrivacy()">X</button>
+        </div>
+        <div class="modal-body">
+          <p>This privacy policy outlines how we collect, use, and protect your personal information.</p>
+          <h4>Information We Collect</h4>
+          <p>We may collect personal information such as your name, email address, shipping address, billing address,
+            and payment information when you contact us or create an account for our website.</p>
+          <h4>How We Use Your Information</h4>
+          <p>We use your personal information to process and fulfill your orders, communicate with you about your
+            orders, and send you promotional offers and updates.</p>
+          <h4>Third-Party Links</h4>
+          <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices or
+            content of these websites.</p>
+          <h4>Changes to our Privacy Policys</h4>
+          <p>We may update our privacy policy anytime. We will notify you of any changes by posting the updated privacy
+            policy on our website.</p>
+          <p>By using Shoplink, you consent to our privacy policy.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn confirm-btn" onclick="closePrivacy()">CONFIRM</button>
+          <button type="button" class="btn cancel-btn" onclick="closePrivacy()">CANCEL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="../js/hero-script.js"></script>
+  <script src="../js/footer.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/products-script.js"></script>
+  <script src="../js/search.js"></script>
+
+</body>
+
+</html> 

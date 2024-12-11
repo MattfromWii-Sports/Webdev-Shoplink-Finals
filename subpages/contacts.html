@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shoplink</title>
+    <link rel="icon" type="image/png" href="../images/logos/shoplink-icon-white-transparent.png">
+    <script src="" defer></script>
+    <!-- hi -->
+    <!-- FONTS & ELEMENTS-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/style-hero.css">
+    <link rel="stylesheet" href="../css/style-slider.css">
+    <link rel="stylesheet" href="../css/contacts.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="tagLineGrid">Delivering Quality, Securing Trust<sup>TM</sup></div>
+        <div class="searchGrid">
+            <form action="../subpages/on-hand-products.html" method="get" class="search-bar">
+                <input type="text" placeholder="Search..." name="query" />
+                <button type="submit"><img src="../images/search.png" alt="search-icon" /></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <ul class="sidebar">
+            <li id="close" onclick="closeSidebar()"><a href="#" class="closeButton"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="50px"
+                        fill="#5f6368">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="./on-hand-products.html">PRODUCTS</a></li>
+            <li><a href="./contacts.html">CONTACTS</a></li>
+            <li><a href="./aboutus.html">ABOUT US</a></li>
+        </ul>
+        <ul class="navList">
+            <li id="logo"><a href="/" class="logo" id="navListLogo"><img src="../images/logo-transparent.png"
+                        class="shoplink-logo" id="logo-white"><img src="../images/logo-green-transparent.png"
+                        class="shoplink-logo" id="logo-green"></a></li>
+            <li class="hideOnMobile"><a href="../index.html" class="home" id="navListHome">HOME</a></li>
+            <li class="hideOnMobile"><a href="./on-hand-products.html">PRODUCTS</a></li>
+            <li class="hideOnMobile"><a href="./contacts.html" class="bold-underline">CONTACTS</a></li>
+            <li class="hideOnMobile"><a href="./aboutus.html">ABOUT US</a></li>
+            <li onclick=showSidebar() class="menu"><a href="#" id="menuButton"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="40px" viewBox="0 -960 960 960" width="50px" fill="#5f6368">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></span></a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HERO -->
+    <div class="hero-container">
+        <div class="hero">
+            <img src="../images/hero/hero-contacts/hero-contacts-sub.png" class="img-hero pop">
+            <div class="text-overlay text-overlay-swap text-wipe">
+                <div class="text-wipe"></div>
+                <div class="hero-text hero-text-right">
+                    <!-- <h5 class="top-text-hero">YOUR PARTNER IN<br></h5> -->
+                    <h2 style="font-weight: 600;">HOW CAN WE <span class="green-highlight">CONTACT</span> YOU?</h2>
+                    <h3 class="bottom-text-hero">Connect with our team to find the perfect packaging fit!</h3>
+                </div>
+                <img src="../images/hero/hero-contacts/hero-contacts-main.png"
+                    class="overlay-img overlay-img-next-photo" style="margin-left: -15rem;">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Main -->
+
+
+    <!-- Contact Info -->
+    <div class="contact-info-container">
+        <div class="contacts-banner" id="contact-info-banner">
+            <div class="contacts-banner-icon">
+                <img class="contacts-icon" src="../images/contacts/headset.svg" alt="Headset">
+            </div>
+            <div class="contacts-banner-text-container">
+                <p class="contacts-banner-text">
+                    Our packaging experts are ready to take your brand to new heights. Reach out today to discuss custom
+                    solutions tailored to your unique needs!
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="contact-info-sub-container">
+            <div class="contact-info-item">
+                <div class="contacts-icon">
+                    <img src="../images/contacts/clock.svg" alt="Clock">
+                </div>
+                <div class="contact-info-item-text">
+                    <strong>Business Hours</strong><br>
+                    Monday to Saturday<br>
+                    8:00am to 5:00pm
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <div class="contacts-icon">
+                    <img src="../images/contacts/mail.svg" alt="Mail">
+                </div>
+                <div class="contact-info-item-text">
+                    <strong>Email</strong><br>
+                    <a href="mailto:info@shoplink.com.ph">info@shoplink.com.ph</a>
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <div class="contacts-icon">
+                    <img src="../images/contacts/map-pin.svg" alt="Map Pin">
+                </div>
+                <div class="contact-info-item-text">
+                    <strong>Location</strong><br>
+                    22 F. Balagtas St.<br>
+                    Marikina Heights, Marikina City
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <div class="contacts-icon">
+                    <img src="../images/contacts/facebook.svg" alt="Facebook">
+                </div>
+                <div class="contact-info-item-text">
+                    <strong>Facebook</strong><br>
+                    <a href="https://www.facebook.com/muting.kaalaman.3">https://www.facebook.com/muting.kaalaman.3</a>
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <div class="contacts-icon">
+                    <img src="../images/contacts/phone.svg" alt="Phone">
+                </div>
+                <div class="contact-info-item-text">
+                    <strong>Contact Number</strong><br>
+                    <!-- KULANG NG FLAG -->
+                    +63 969 0452 024
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <div class="contacts-icon">
+                    <img src="../images/contacts/tiktok.svg" alt="TikTok">
+                </div>
+                <div class="contact-info-item-text">
+                    <strong>TikTok</strong><br>
+                    <a href="https://www.tiktok.com/@shoplinkpackaging">https://www.tiktok.com/@shoplinkpackaging</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-prologue">
+            <div class="contact-form-prologue-text-container">
+                <p>Looking for the ideal packaging solution? Fill up our contact form by clicking the button below, and
+                    our team will reach out to discuss your needs and
+                    custom options.</p>
+            </div>
+            <button class="contacts-btn" id="contact-form-prologue-btn" onclick="openContactForm()">Contact
+                Form</button>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form-overlay">
+        <div class="contact-form-container">
+            <div class="contacts-banner">
+                <div class="contacts-banner-icon">
+                    <img src="../images/contacts/clipboard-pen.svg" alt="Clipboard with pen">
+                </div>
+                <p class="contacts-banner-text">
+                    Ready to find the perfect packaging solution for your business? Fill out the form below and our team
+                    will be
+                    in touch to discuss your needs and explore custom options.
+                </p>
+            </div>
+
+            <hr>
+
+            <form id="contactForm">
+                <div class="contacts-form-row">
+                    <div class="contacts-form-column">
+                        <div class="contacts-form-section">
+                            <div class="contacts-section-title">Contact Information</div>
+                            <input type="text" id="firstName" placeholder="First Name*" required>
+                            <input type="text" id="lastName" placeholder="Last Name*" required>
+                            <input type="email" id="emailContact" placeholder="Email*" required>
+                            <input type="tel" id="phoneNumber" placeholder="Phone Number*" required>
+                        </div>
+
+                        <div class="contacts-form-section">
+                            <div class="contacts-section-title">Preferred Contact Method*</div>
+                            <div class="contacts-contact-method">
+                                <div class="contacts-radio-option">
+                                    <input type="radio" name="contact" id="emailPreference" value="email" required>
+                                    <label for="emailPreference">Email</label>
+                                </div>
+                                <div class="contacts-radio-option">
+                                    <input type="radio" name="contact" id="phonePreference" value="phone">
+                                    <label for="phonePreference">Phone Number</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contacts-form-section">
+                            <div class="contacts-section-title">Business Details</div>
+                            <input type="text" id="companyName" placeholder="Company/Business Name">
+                        </div>
+                    </div>
+
+                    <div class="contacts-form-column">
+                        <div class="contacts-form-section">
+                            <div class="contacts-section-title">Inquiry Type</div>
+                            <select id="inquiryType" required>
+                                <option value="" disabled selected>Choose an Inquiry Type*</option>
+                                <option value="bulk">Bulk Order</option>
+                                <option value="custom">Custom Order</option>
+                                <option value="quote">Quote Request</option>
+                            </select>
+                        </div>
+
+                        <div class="contacts-form-section">
+                            <div class="contacts-section-title">Message</div>
+                            <textarea id="contactMessage" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts-consent-box">
+                    By checking this box, I consent to the collection and use of my personal information as described in
+                    the
+                    Privacy Policy. I agree to be contacted through my preferred method regarding my inquiry.
+                </div>
+
+                <div class="contacts-consent-wrapper">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="consentCheckbox" required>
+                        <label for="consentCheckbox">Consent*</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="contacts-btn">Submit</button>
+            </form>
+            <button onclick="toggleContactForm()" class="contact-form-close-btn"></button>
+        </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="footer">
+        <div class="footer-top">
+            <div class="footer-top-msg">
+                <p><b>WHERE TO BUY</b></p>
+            </div>
+            <div class="footer-top-buttons">
+                <div class="footer-top-images">
+                    <a href="https://maps.app.goo.gl/ndaYxZzZknJSnrge9"><img
+                            src="../images/footer/footerTop-Store-Button.png" alt="Store Button"></a>
+                    <img id="lazada-button" src="../images/footer/footerTop-Lazada-Button.png" alt="Lazada Button">
+                    <a href="https://shopee.ph/shop/1216673787/"><img src="../images/footer/footerTop-Shopee-Button.png"
+                            alt="Shopee Button"></a>
+                    <a href="https://www.tiktok.com/@shoplinkpackaging"><img
+                            src="../images/footer/footerTop-Button-TikTok.png" alt="TikTok Button"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <a href="../index.html"><img src="../images/footer-logo-white-transparent.png"></a>
+            </div>
+            <div class="footer-socials">
+                <div class="footer-contact">
+                    <p>Follow Us!</p>
+                    <div class="footer-logo-row">
+                        <a href="https://www.facebook.com/muting.kaalaman.3"><img
+                                src="../images/footer/footerBottom-Facebook.png" alt="facebook logo"></a>
+                        <a href="https://www.tiktok.com/@shoplinkpackaging"><img
+                                src="../images/footer/footerBottom-TikTok.png" alt="tiktok logo"></a>
+                    </div>
+                </div>
+                <div class="footer-follow">
+                    <p>Contact Us!</p>
+                    <div class="footer-logo-row">
+                        <a href="contacts.html"><img src="../images/footer/footerBottom-Email.png" alt="email logo"></a>
+                        <a href="contacts.html"><img src="../images/footer/footerBottom-Phone.png" alt="phone logo"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-terms">
+                <button class="terms" onclick="openTerms()">Terms of Use</button>
+                <button class="privacy-policy" onclick="openPrivacy()">Privacy Policy</button>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2024 Shoplink. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer modals -->
+    <div class="modal fade" id="terms-modal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Terms and Conditions</h3>
+                    <button type="button" class="close" onclick="closeTerms()">X</button>
+                </div>
+                <div class="modal-body">
+                    <p>By continuing to access this website, you agree to accept these terms and conditions in full.</p>
+                    <h4>License</h4>
+                    <p>Unless otherwise stated, Shoplink and/or its licensors own the intellectual property rights for
+                        all
+                        material on Shoplink. All intellectual property rights are reserved. You must not republish,
+                        reproduce, duplicate, or copy material from Shoplink.</p>
+                    <h4>Products</h4>
+                    <p>Product images displayed on the website may have slight variations with the actual product.
+                        Prices
+                        are subject to change.</p>
+                    <h4>Orders and Shipping</h4>
+                    <p>We reserve the right to cancel orders. Shipping costs and times may vary, and returns are
+                        processed
+                        on a case to case basis with with regards to an investigation by our internal staff.</p>
+                    <h4>Liability</h4>
+                    <p>We are not liable for indirect or consequential damages.</p>
+                    <p>We may update these Terms without notice.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn confirm-btn" onclick="closeTerms()">CONFIRM</button>
+                    <button type="button" class="btn cancel-btn" onclick="closeTerms()">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="privacy-modal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Privacy Policy</h3>
+                    <button type="button" class="close" onclick="closePrivacy()">X</button>
+                </div>
+                <div class="modal-body">
+                    <p>This privacy policy outlines how we collect, use, and protect your personal information.</p>
+                    <h4>Information We Collect</h4>
+                    <p>We may collect personal information such as your name, email address, shipping address, billing
+                        address, and payment information when you contact us or create an account for our website.</p>
+                    <h4>How We Use Your Information</h4>
+                    <p>We use your personal information to process and fulfill your orders, communicate with you about
+                        your
+                        orders, and send you promotional offers and updates.</p>
+                    <h4>Third-Party Links</h4>
+                    <p>Our website may contain links to third-party websites. We are not responsible for the privacy
+                        practices or content of these websites.</p>
+                    <h4>Changes to our Privacy Policys</h4>
+                    <p>We may update our privacy policy anytime. We will notify you of any changes by posting the
+                        updated
+                        privacy policy on our website.</p>
+                    <p>By using Shoplink, you consent to our privacy policy.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn confirm-btn" onclick="closePrivacy()">CONFIRM</button>
+                    <button type="button" class="btn cancel-btn" onclick="closePrivacy()">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="../js/hero-script.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/contact-form.js"></script>
+    <script src="../js/form-validation.js"></script>
+</body>
+
+</html>
